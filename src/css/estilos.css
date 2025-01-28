@@ -1,22 +1,28 @@
 body {
-    font-family: 'Yugioh', serif;
-    background-image: url(../imagens/fundo-site.jpg);
+    font-family: 'Friends', serif;
+    background-image: url('../imagens/fundo-sofa.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: 100vh;
     gap: 30px;
 }
 
 .cabecalho {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .cabecalho .titulo {
+    font-size: 50px;
     color: #f1ecff;
+    position: relative;
+    top: -20px; 
 }
 
 .cartao {
@@ -35,10 +41,11 @@ body {
 }
 
 .lista-personagens {
-    width: 300px;
+    width: 500px;
     height: 500px;
     border-radius: 10px;
     position: relative;
+    padding: 12px;
 }
 
 .slider {
@@ -49,18 +56,20 @@ body {
 }
 
 .cartao .nome {
-    font-size: 13px;
+    font-size: 19px;
+    color: #f1ecff;
     padding: 5px;
     text-transform: uppercase;
-    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
-    border: 2px solid #a67c52;
+    background: rgb(2, 0, 36);
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
     border-radius: 4px;
 }
 
-.cartao .estrela {
+.cartao .coracao {
     width: 20px;
     height: 20px;
-    background-image: url(../imagens/nivel-carta.png);
+    background-image: url('../imagens/coracao.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -74,19 +83,20 @@ body {
 }
 
 .cartao .imagem-carta {
-    max-width: 260px;
+    max-width: 500px;
     align-self: center;
 }
 
 .cartao .informacoes {
     border-radius: 5px;
-    max-width: 300px;
-    color: #000000;
-    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
-    border: 2px solid #a67c52;
+    max-width: 500px;
+    color: white;
+    font-size: 20px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
     text-align: left;
     line-height: 1.5;
-    padding: 5px;
+    padding: 10px;
 }
 
 .cartao .informacoes .informacoes-ataque {
@@ -101,11 +111,11 @@ body {
 }
 
 .cartao .informacoes .descricao {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid orange;
     padding: 10px;
-    max-height: 95px;
+    max-height: 150px;
     overflow-y: scroll;
-    font-size: 13px;
+    font-size: 20px;
 }
 
 .fundo-1 {
@@ -147,6 +157,7 @@ body {
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 20px;
 }
 
 .btn-seta.btn-voltar {
@@ -154,7 +165,7 @@ body {
 }
 
 .btn-seta:hover {
-    background-color: #8351fe;
+    background-color: orange;
 }
 
 body::-webkit-scrollbar-track {
@@ -172,4 +183,8 @@ body::-webkit-scrollbar-track {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #c08057;
+}
+
+.carta-virada {
+    display: none;
 }
