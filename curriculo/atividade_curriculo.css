@@ -1,0 +1,89 @@
+
+body{
+    font-family: 'source sans pro', sans-serif;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 56px;
+}
+
+p{
+    font-size: 14px;
+}
+
+h1{
+    background-color: #ccc;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.cabecalho{
+    text-align: center;
+    font-size: 14px;
+}
+
+h2{
+    background-color: #ccc;
+    border-bottom: 3px solid black;
+    padding: 10px;
+    font-size: 20px;
+    font-style: italic;
+    
+}
+
+h3{
+    font-size: 16px;
+}
+
+.cursos {
+    padding-left: 0px;
+    font-size: 14px;
+}
+
+.cursos li{
+    list-style-position: inside;
+    list-style-type: square;
+
+}
+
+a:link{
+    color: #48bbf0;
+    text-decoration: none;
+}
+
+a:visited{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(213, 214, 150);
+    text-decoration: underline;
+}
+
+a:active{
+    color: rgb(22, 20, 20);
+    text-decoration: none;
+}
+
+.menu{
+    text-align: right;
+}
+
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px;
+}
+
+.menu a{
+    background-color: #ccc;
+    padding: 10px;
+}
+
+.menu a:hover{
+    background-color: #ddd;
+}
